@@ -1,0 +1,11 @@
+_build/
+_builds/
+build/
+cmake-build-*/
+.hunter/
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.log

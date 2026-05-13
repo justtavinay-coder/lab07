@@ -1,0 +1,6 @@
+image: Visual Studio 2019
+
+build_script:
+  - cmake -S . -B _build -DBUILD_TESTS=ON
+  - cmake --build _build --config Release
+  - cmake --build _build --target RUN_TESTS --config Release

@@ -1,0 +1,8 @@
+language: cpp
+os: linux
+dist: focal
+
+script:
+  - cmake -S . -B _build -DBUILD_TESTS=ON
+  - cmake --build _build --parallel 2
+  - cmake --build _build --target test -- ARGS=--verbose
